@@ -30,11 +30,11 @@ body{
   overflow-x:hidden;
   cursor:none;
 }
-
+ 
 /* CUSTOM CURSOR */
 .cursor{position:fixed;width:8px;height:8px;background:var(--cyan);border-radius:50%;pointer-events:none;z-index:9999;transition:transform 0.05s;mix-blend-mode:screen;}
 .cursor-ring{position:fixed;width:32px;height:32px;border:1.5px solid rgba(0,212,255,0.5);border-radius:50%;pointer-events:none;z-index:9998;transition:all 0.12s ease;}
-
+ 
 /* GRID BG */
 body::before{
   content:'';position:fixed;inset:0;
@@ -44,7 +44,7 @@ body::before{
   background-size:48px 48px;
   pointer-events:none;z-index:0;
 }
-
+ 
 /* AMBIENT GLOW */
 .ambient{
   position:fixed;top:-20%;left:-10%;
@@ -58,9 +58,9 @@ body::before{
   background:radial-gradient(circle,rgba(0,212,255,0.06) 0%,transparent 60%);
   pointer-events:none;z-index:0;
 }
-
+ 
 .wrap{position:relative;z-index:1;max-width:980px;margin:0 auto;padding:0 36px;}
-
+ 
 /* NAV */
 nav{
   position:fixed;top:0;left:0;right:0;z-index:100;
@@ -78,11 +78,11 @@ nav{
   transition:color 0.2s;
 }
 .nav-links a:hover{color:var(--cyan);}
-
+ 
 /* HERO */
 .hero{min-height:100vh;display:flex;align-items:center;padding:100px 0 60px;}
 .hero-inner{display:flex;gap:80px;align-items:center;}
-
+ 
 /* PHOTO */
 .photo-wrap{position:relative;flex-shrink:0;}
 .photo-glow-bg{
@@ -110,7 +110,7 @@ nav{
   0%,100%{box-shadow:0 0 0 0 rgba(34,197,94,0.6);}
   50%{box-shadow:0 0 0 10px rgba(34,197,94,0);}
 }
-
+ 
 /* HERO TEXT */
 .hero-badge{
   display:inline-flex;align-items:center;gap:8px;
@@ -126,7 +126,7 @@ nav{
   background:linear-gradient(130deg,#fff 20%,var(--cyan) 60%,var(--purple) 100%);
   -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
 }
-
+ 
 /* TYPING ANIMATION */
 .typing-wrap{
   font-family:'JetBrains Mono',monospace;font-size:16px;
@@ -140,7 +140,7 @@ nav{
   vertical-align:middle;
 }
 @keyframes blink{0%,100%{opacity:1;}50%{opacity:0;}}
-
+ 
 .hero-desc{font-size:15px;color:var(--muted);line-height:1.75;max-width:450px;margin-bottom:30px;}
 .hero-links{display:flex;flex-wrap:wrap;gap:10px;}
 .pill{
@@ -152,7 +152,7 @@ nav{
 }
 .pill:hover{color:var(--cyan);border-color:rgba(0,212,255,0.45);background:rgba(0,212,255,0.08);transform:translateY(-2px);}
 .pill-dot{width:7px;height:7px;border-radius:50%;}
-
+ 
 /* SECTIONS */
 .section{padding:80px 0;}
 .sec-label{
@@ -163,7 +163,7 @@ nav{
 }
 .sec-label::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,rgba(0,212,255,0.35),transparent);}
 .sec-label span{color:var(--muted);margin-right:4px;}
-
+ 
 /* ABOUT JSON */
 .json-block{
   background:var(--bg2);border:1px solid var(--border);
@@ -172,7 +172,7 @@ nav{
   line-height:2.1;overflow-x:auto;
 }
 .j-key{color:#7dd3fc;}.j-str{color:#86efac;}.j-num{color:#fca5a5;}.j-bool{color:var(--cyan);}.j-punc{color:var(--muted);}
-
+ 
 /* TECH GRID */
 .tech-categories{display:flex;flex-direction:column;gap:36px;}
 .cat-title{
@@ -195,7 +195,7 @@ nav{
 .tech-logo-wrap{width:44px;height:44px;display:flex;align-items:center;justify-content:center;}
 .tech-logo-wrap img{width:44px;height:44px;object-fit:contain;filter:drop-shadow(0 0 4px rgba(0,0,0,0.4));}
 .tech-label{font-family:'JetBrains Mono',monospace;font-size:9.5px;color:var(--muted);text-align:center;white-space:nowrap;}
-
+ 
 /* EXP */
 .exp-list{display:flex;flex-direction:column;gap:20px;}
 .exp-card{
@@ -216,7 +216,7 @@ nav{
 .exp-points li::before{content:'▸';position:absolute;left:0;color:var(--cyan);font-size:10px;top:5px;}
 .exp-tags{display:flex;flex-wrap:wrap;gap:6px;}
 .exp-tag{font-family:'JetBrains Mono',monospace;font-size:9.5px;color:var(--muted);background:rgba(255,255,255,0.05);border:1px solid var(--border);padding:3px 9px;border-radius:4px;}
-
+ 
 /* CONCEPTS */
 .concepts-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
 .concept-item{
@@ -226,13 +226,13 @@ nav{
 }
 .concept-item:hover{border-color:rgba(0,212,255,0.3);color:var(--text);}
 .concept-icon{color:var(--cyan);font-size:14px;flex-shrink:0;}
-
+ 
 /* FOOTER */
 footer{padding:40px 0;border-top:1px solid var(--border);text-align:center;}
 .footer-quote{font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--muted);}
 .footer-quote em{color:var(--cyan);font-style:normal;}
 .footer-copy{font-family:'JetBrains Mono',monospace;font-size:10px;color:rgba(100,116,139,0.4);margin-top:10px;letter-spacing:2px;}
-
+ 
 /* FADE IN */
 @keyframes fadeUp{from{opacity:0;transform:translateY(28px);}to{opacity:1;transform:translateY(0);}}
 .fade-up{opacity:0;animation:fadeUp 0.65s ease forwards;}
@@ -240,12 +240,12 @@ footer{padding:40px 0;border-top:1px solid var(--border);text-align:center;}
 </style>
 </head>
 <body>
-
+ 
 <div class="cursor" id="cursor"></div>
 <div class="cursor-ring" id="cursorRing"></div>
 <div class="ambient"></div>
 <div class="ambient2"></div>
-
+ 
 <nav>
   <div class="nav-logo">MB<span style="color:var(--purple)">.dev</span></div>
   <div class="nav-links">
@@ -255,7 +255,7 @@ footer{padding:40px 0;border-top:1px solid var(--border);text-align:center;}
     <a href="#concepts">Concepts</a>
   </div>
 </nav>
-
+ 
 <div class="wrap">
   <section class="hero" id="home">
     <div class="hero-inner">
@@ -281,7 +281,7 @@ footer{padding:40px 0;border-top:1px solid var(--border);text-align:center;}
       </div>
     </div>
   </section>
-
+ 
   <section class="section" id="about">
     <div class="sec-label"><span>01 /</span>About Me</div>
     <div class="json-block">
@@ -295,11 +295,11 @@ footer{padding:40px 0;border-top:1px solid var(--border);text-align:center;}
       <span class="j-punc">}</span>
     </div>
   </section>
-
+ 
   <section class="section" id="stack">
     <div class="sec-label"><span>02 /</span>Tech Stack</div>
     <div class="tech-categories">
-
+ 
       <div>
         <div class="cat-title">Languages</div>
         <div class="tech-grid">
@@ -311,7 +311,7 @@ footer{padding:40px 0;border-top:1px solid var(--border);text-align:center;}
           <div class="tech-card"><div class="tech-logo-wrap"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/mathworks.svg" style="filter:invert(35%) sepia(100%) saturate(400%) hue-rotate(190deg) brightness(120%)" alt="MATLAB"/></div><span class="tech-label">MATLAB</span></div>
         </div>
       </div>
-
+ 
       <div>
         <div class="cat-title">Frontend</div>
         <div class="tech-grid">
@@ -322,7 +322,7 @@ footer{padding:40px 0;border-top:1px solid var(--border);text-align:center;}
           <div class="tech-card"><div class="tech-logo-wrap"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/bootstrap.svg" style="filter:invert(40%) sepia(60%) saturate(500%) hue-rotate(240deg) brightness(110%)" alt="Bootstrap"/></div><span class="tech-label">Bootstrap</span></div>
         </div>
       </div>
-
+ 
       <div>
         <div class="cat-title">Backend &amp; Frameworks</div>
         <div class="tech-grid">
@@ -332,7 +332,7 @@ footer{padding:40px 0;border-top:1px solid var(--border);text-align:center;}
           <div class="tech-card"><div class="tech-logo-wrap"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/dotnet.svg" style="filter:invert(40%) sepia(60%) saturate(500%) hue-rotate(240deg) brightness(120%)" alt="EF Core"/></div><span class="tech-label">EF Core</span></div>
         </div>
       </div>
-
+ 
       <div>
         <div class="cat-title">Databases</div>
         <div class="tech-grid">
@@ -342,7 +342,7 @@ footer{padding:40px 0;border-top:1px solid var(--border);text-align:center;}
           <div class="tech-card"><div class="tech-logo-wrap"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/phpmyadmin.svg" style="filter:invert(50%) sepia(30%) saturate(300%) hue-rotate(230deg) brightness(130%)" alt="phpMyAdmin"/></div><span class="tech-label">phpMyAdmin</span></div>
         </div>
       </div>
-
+ 
       <div>
         <div class="cat-title">DevOps &amp; Tools</div>
         <div class="tech-grid">
@@ -353,7 +353,7 @@ footer{padding:40px 0;border-top:1px solid var(--border);text-align:center;}
           <div class="tech-card"><div class="tech-logo-wrap"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/postman.svg" style="filter:invert(55%) sepia(80%) saturate(500%) hue-rotate(340deg) brightness(110%)" alt="Postman"/></div><span class="tech-label">Postman</span></div>
         </div>
       </div>
-
+ 
       <div>
         <div class="cat-title">Methodology &amp; Concepts</div>
         <div class="tech-grid">
@@ -363,14 +363,14 @@ footer{padding:40px 0;border-top:1px solid var(--border);text-align:center;}
           <div class="tech-card"><div class="tech-logo-wrap"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/cisco.svg" style="filter:invert(35%) sepia(100%) saturate(400%) hue-rotate(190deg) brightness(110%)" alt="TCP/IP"/></div><span class="tech-label">TCP/IP</span></div>
         </div>
       </div>
-
+ 
     </div>
   </section>
-
+ 
   <section class="section" id="experience">
     <div class="sec-label"><span>03 /</span>Experience</div>
     <div class="exp-list">
-
+ 
       <div class="exp-card c-orange">
         <div class="exp-top">
           <div><div class="exp-role">Full-Stack Developer Intern</div><div class="exp-company">🟠 IDS Fintech</div></div>
@@ -384,7 +384,7 @@ footer{padding:40px 0;border-top:1px solid var(--border);text-align:center;}
         </ul>
         <div class="exp-tags"><span class="exp-tag">ASP.NET Core</span><span class="exp-tag">C#</span><span class="exp-tag">React.js</span><span class="exp-tag">Next.js</span><span class="exp-tag">SQL Server</span><span class="exp-tag">EF Core</span><span class="exp-tag">REST APIs</span><span class="exp-tag">Fintech</span></div>
       </div>
-
+ 
       <div class="exp-card c-green">
         <div class="exp-top">
           <div><div class="exp-role">Backend Developer Intern</div><div class="exp-company">🟢 IDS</div></div>
@@ -398,7 +398,7 @@ footer{padding:40px 0;border-top:1px solid var(--border);text-align:center;}
         </ul>
         <div class="exp-tags"><span class="exp-tag">ASP.NET Core</span><span class="exp-tag">C#</span><span class="exp-tag">SQL Server</span><span class="exp-tag">EF Core</span><span class="exp-tag">Next.js</span><span class="exp-tag">Swagger</span><span class="exp-tag">Postman</span></div>
       </div>
-
+ 
       <div class="exp-card c-blue">
         <div class="exp-top">
           <div><div class="exp-role">Frontend Developer Intern</div><div class="exp-company">🔵 OGERO Telecom</div></div>
@@ -411,10 +411,10 @@ footer{padding:40px 0;border-top:1px solid var(--border);text-align:center;}
         </ul>
         <div class="exp-tags"><span class="exp-tag">React.js</span><span class="exp-tag">Bootstrap</span><span class="exp-tag">HTML5</span><span class="exp-tag">CSS3</span><span class="exp-tag">JavaScript</span><span class="exp-tag">UI/UX</span></div>
       </div>
-
+ 
     </div>
   </section>
-
+ 
   <section class="section" id="concepts">
     <div class="sec-label"><span>04 /</span>Core Concepts</div>
     <div class="concepts-grid">
@@ -428,13 +428,13 @@ footer{padding:40px 0;border-top:1px solid var(--border);text-align:center;}
       <div class="concept-item"><span class="concept-icon">◈</span>Full-Stack Architecture</div>
     </div>
   </section>
-
+ 
   <footer>
     <div class="footer-quote">"First, solve the problem. Then, <em>write the code.</em>"</div>
     <div class="footer-copy">MAJD BADDOUR · 2026</div>
   </footer>
 </div>
-
+ 
 <script>
 // Custom cursor
 const cursor=document.getElementById('cursor'),ring=document.getElementById('cursorRing');
@@ -448,7 +448,7 @@ document.querySelectorAll('.tech-card,.pill,.exp-card').forEach(el=>{
   el.addEventListener('mouseenter',()=>{ring.style.transform='scale(1.6)';ring.style.borderColor='rgba(0,212,255,0.8)';});
   el.addEventListener('mouseleave',()=>{ring.style.transform='scale(1)';ring.style.borderColor='rgba(0,212,255,0.5)';});
 });
-
+ 
 // Professional typing animation
 const phrases=[
   'Full-Stack Developer',
@@ -477,3 +477,4 @@ setTimeout(type,1000);
 </script>
 </body>
 </html>
+ 
